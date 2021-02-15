@@ -1,0 +1,15 @@
+Shell이란 사용자와 커널 사이의 매개체 역할을 하는 프로그램이다.
+가장 많이 쓰이는 쉘 프로그램은 bash이다
+
+일반적으로 전역 파일은 /etc에 위치한다.
+지역적인 파일은 숨겨져 있으며 숨긴 파일은 ~/.bashrc와 같이 '.'으로 시작한다.
+
+~/.bashrc는 bash가 실행될 때 실행되는 함수를 제어하는 것고 관련되어 있음.(개인 사용자에게만 한정)
+/etc/bashrc는 모든 사용자에게 영향을 끼치는 환경 설정 파일임.
+
+쿠다 경로를 설정하기 위해선
+#1. sudo vi ~/.bashrc
+#2. a : 편집모드
+#3. export PATH=/usr/local/cuda-9.0/bin${PATH:+:${PATH}}
+    export LD_LIBRARY_PATH=/usr/local/cuda/lib64:${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+#4. source ~/.bashrc
