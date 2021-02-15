@@ -8,8 +8,8 @@ Shell이란 사용자와 커널 사이의 매개체 역할을 하는 프로그�
 /etc/bashrc는 모든 사용자에게 영향을 끼치는 환경 설정 파일임.
 
 쿠다 경로를 설정하기 위해선
-#1. sudo vi ~/.bashrc
-#2. a : 편집모드
+#1. gedit ~/.bashrc
+#2. 맨 마지막 줄로 이동
 #3. export PATH=/usr/local/cuda-9.0/bin${PATH:+:${PATH}}
     export LD_LIBRARY_PATH=/usr/local/cuda/lib64:${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 #4. source ~/.bashrc
