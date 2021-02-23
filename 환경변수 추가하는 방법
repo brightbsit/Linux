@@ -13,3 +13,7 @@ Shell이란 사용자와 커널 사이의 매개체 역할을 하는 프로그�
 #3. export PATH=/usr/local/cuda-9.0/bin${PATH:+:${PATH}}
     export LD_LIBRARY_PATH=/usr/local/cuda/lib64:${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 #4. source ~/.bashrc
+
+[쿠다를 설치했음에도 nvcc --version 인식 안될 때]
+export PATH=/usr/local/cuda-9.0/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64:${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
